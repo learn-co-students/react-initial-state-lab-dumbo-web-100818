@@ -1,1 +1,29 @@
 // your Bomb code here!
+import React, { Component } from 'react';
+
+export default class ImageSlider extends Component{
+
+  constructor(props){
+    super(props)
+    this.state = {
+      secondsLeft: this.props.initialCount
+    }
+  }
+
+  // props need to be passed to both the super and the constructor for 'this' to work
+
+  statement = () => {
+    if(this.state.secondsLeft > 0){
+      return <div>{this.state.secondsLeft} seconds left before I go boom!</div>
+    } else{
+      return <div>Boom!</div>
+    }
+  }
+
+  render(){
+    return(
+      this.statement()
+    )
+  }
+
+}
