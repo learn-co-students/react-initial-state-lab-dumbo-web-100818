@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ImageSlider from './ImageSlider';
-import Bomb from './Bomb';
+import Bomb from './Bomb.js';
+
+
+// initialize  all components first!! 
 
 ReactDOM.render(
   <div>
