@@ -14,10 +14,11 @@ export default class Bomb extends Component {
 
 
 
+
   render(){
-    const seconds = (this.state.secondsLeft === 0)? 'boom!' : `${this.state.secondsLeft} seconds left before I go boom!`
+    const seconds = (this.state.secondsLeft === 0)? 'Boom!' : `${this.state.secondsLeft} seconds left before I go boom!`
     return (
-      <h1> {seconds} </h1>
+      <h1>{seconds}</h1>
     )
   }
 
